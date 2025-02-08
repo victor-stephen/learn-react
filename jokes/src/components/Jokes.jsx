@@ -9,7 +9,7 @@ export default function Jokes({ jokeData }) {
 
   return (
     <div>
-      {jokeData.setup  && <h3>{jokeData.setup}</h3>}
+      {jokeData.setup? <h3>{jokeData.setup}</h3>: null}
       {isShown ? <p>{jokeData.punchline}</p> : null}
       <button onClick={toggleShown}>{isShown ? "Hide" : "Show"} punchline</button>
       <hr />
