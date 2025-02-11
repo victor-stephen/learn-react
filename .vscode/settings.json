@@ -1,0 +1,7 @@
+{
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.suggest.showSnippets": false,
+  "editor.suggest.preview": true
+}
