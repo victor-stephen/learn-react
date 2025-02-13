@@ -5,7 +5,6 @@ import MasterControl from "./MasterControl";
 
 function App() {
   const [pads, setPads] = useState(padsData);
-  const [disAbleOn, setdisAbleOn] = useState()
 
   function toggle(id) {
     setPads((prevPads) =>
