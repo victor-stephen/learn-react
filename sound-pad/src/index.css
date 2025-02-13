@@ -1,33 +1,66 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #1C1917;
+  background-color: #1c1917;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .pad-container {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(2, 100px);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px;
 }
 
-button {
-    height: 100px;
-    width: 100px;
-    border: 3px solid white;
-    border-radius: 5px;
-    cursor: pointer;   
-    opacity: 0.1;
+button:not(.all-off, .all-on) {
+  height: 100px;
+  width: 100px;
+  border: 3px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.1;
+}
+div.master-button-container {
+  display: flex;
+  gap: 20px;
+}
+
+button.all-off,
+button.all-on {
+  width: 140px;
+  background-color: rgb(204, 19, 19);
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+button.all-off:hover,
+button.all-on:hover {
+  opacity: 1;
+}
+
+button.all-on {
+  background-color: rgb(2, 126, 8);
 }
 
 button.on {
-    opacity: 1;
+  opacity: 1;
+}
+
+button:disabled {
+  background-color: #ccc; /* Gray background */
+  color: #666; /* Dim text color */
+  cursor: not-allowed; /* Show "not-allowed" cursor */
+  opacity: 0.6; /* Reduce opacity */
 }
