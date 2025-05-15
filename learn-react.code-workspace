@@ -5,6 +5,9 @@
     },
     {
       "path": "."
+    },
+    {
+      "path": "../meme-generator"
     }
   ]
 }
